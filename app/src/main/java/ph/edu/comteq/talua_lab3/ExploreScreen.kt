@@ -33,8 +33,17 @@ fun ExploreScreen(onBackClick: () -> Unit, onTicketingClick: () -> Unit) {
         Text(
             "Explore",
             fontSize = 28.sp,
-            color = Color(0xFFFFD700),
+            color = Color.White,
             fontWeight = FontWeight.Bold
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(1.dp)
+                .background(Color.White)
         )
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -54,7 +63,7 @@ fun ExploreScreen(onBackClick: () -> Unit, onTicketingClick: () -> Unit) {
             Text(
                 "Tickets >",
                 fontSize = 16.sp,
-                color = Color(0xFFFFD700),
+                color = Color.White,
                 fontWeight = FontWeight.Medium,
                 modifier = Modifier.clickable { onTicketingClick() }
             )
